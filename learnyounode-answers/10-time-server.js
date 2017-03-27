@@ -18,4 +18,4 @@ var server = net.createServer(function (socket) {
   socket.end(moment().format('YYYY-MM-DD HH:mm') + '\n');
 })
 
-server.listen(8000)
+server.listen(process.argv[2])
